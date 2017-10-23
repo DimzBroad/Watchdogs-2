@@ -92,7 +92,7 @@ Audio Volume
 ------------
 */
 
-song.volume = 0.15;
+song.volume = 0.10;
 audio1.volume = 1;
 audio2.volume = 1;
 audio3.volume = 1;
