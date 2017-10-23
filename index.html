@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Watchdogs 2 Promotional Page">
+    <meta name="keywords" content="HTML,CSS,JavaScript, Experiment, Watchdogs, Promotion">
+    <meta name="author" content="Dimitris Broad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> WD2 </title>
+
+    <link href="css/vendors/hover.css" rel="stylesheet" media="all">
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND IMAGES -->
+
+    <div class="bgImg1 dk-col-12 tb-col-12 mb-col-12" id="bgImg1"></div>
+    <div class="bgImg2 dk-col-12 tb-col-12 mb-col-12" id="bgImg2"></div>
+    <div class="bgImg3 dk-col-12 tb-col-12 mb-col-12" id="bgImg3"></div>
+
+    <!--AUDIO CONTENT -->
+
+    <audio id="songAudio" autoplay loop>
+      <source src="audio/upstep1.mp3" type="audio/wav">
+    </audio>
+
+    <audio id="dialogue1">
+      <source src="audio/dedsecDialogue.wav" type="audio/wav">
+    </audio>
+
+    <audio id="dialogue2">
+      <source src="audio/dedsecDialogue2.wav" type="audio/wav">
+    </audio>
+
+    <audio id="dialogue3">
+      <source src="audio/dedsecDialogue3.wav" type="audio/wav">
+    </audio>
+
+    <!-- AUDIO CONTROLS -->
+
+    <section class="musicControlsContainer">
+        <span class="marginAuto">
+            <i id ="audioBtnOpen"class="fa fa-music iconWhite hvr-buzz-out" aria-hidden="true"></i>
+            <i id ="audioBtnClose"class="fa fa-music iconWhite hvr-buzz-out" aria-hidden="true"></i>
+            <a id="play" href="#" onClick="play()"><i class="fa fa-play iconWhite hvr-buzz-out"></i></a>
+            <a id="stop" href="#" onClick="stop()"><i class="fa fa-pause iconWhite hvr-buzz-out"></i></a>
+        </span>
+    </section>
+
+    <!-- MY MAIN CONTENT STARTS HERE -->
+
+    <main class="mainContainer dk-col-12 tb-col-12 mb-col-12">
+
+        <!-- HOME SECTION -->
+
+        <section class="homeContainer dk-col-12 tb-col-12 mb-col-12" id="introLanding">
+
+            <!-- TITLE CONTENT -->
+
+            <div class="homeHeaderContainer dk-col-12 tb-col-12 mb-col-12">
+                <div class="homeHeaderContent dk-col-12 tb-col-12 mb-col-12" data-tilt>
+                    <span id="watchdogsTitle" class="dk-col-12 tb-col-12 mb-col-12">
+                    <h1 class="titleFont dk-col-12 tb-col-12 mb-col-12" id="watchdogs2">WATCHDOGS 2</h1>
+                    <p class="paraWhite" id="clickLogo">CLICK THE LOGO TO CONTINUE</p>
+                </span>
+                </div>
+            </div>
+
+            <!-- LOGO WATCHDOGS -->
+
+            <div class="logoWrapper dk-col-12 tb-col-12 mb-col-12">
+                <div class="logoContainer dk-col-10 tb-col-10 mb-col-10 ">
+                    <img id="btn1" class="logoImg" src="imgs/wdLogoWhite.png" alt="Watchdogs 2 Logo" data-tilt>
+                </div>
+            </div>
+
+            <!-- COUNTDOWN -->
+
+            <div class="homeSubHeaderContainer dk-col-12 tb-col-12 mb-col-12">
+                <div class="homeSubHeaderContent dk-col-12 tb-col-12 mb-col-12">
+                    <h1 class="titleFont" id="dateReveal" data-tilt>COMING SOON</h1>
+                    <div class="releaseTime" id="releaseDate" data-tilt>
+                        <p class="ps3" id="wd2Countdown">Calculating Release Date...</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HACKED SECTION -->
+
+        <section class="homeHacked1 dk-col-10 tb-col-10 mb-col-12">
+            <div class="dialogueContainer dk-col-12 tb-col-12 mb-col-12">
+
+                <!-- SKIP THE EXPERIENCE -->
+
+                <div class="dialogueContent mb-col-12 hvr-underline-from-center">
+                    <p class="ps2 dk-col-12 tb-col-12 mb-col-12 " id="skipBtn">
+                        SKIP <br> THE EXPERIENCE
+                    </p>
+                </div>
+
+                <!-- JOIN THE EXPERIENCE -->
+
+                <div class="dialogueContent mb-col-12 hvr-underline-from-center">
+                    <p class="ps2 dk-col-12 tb-col-12 mb-col-12" id="enterBtn">
+                        JOIN <br> THE EXPERIENCE
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="homeHacked2 dk-col-10 tb-col-12 mb-col-12">
+            <div class="dialogueContainer dk-col-12 tb-col-12 mb-col-12">
+
+                <!-- SKIP THE EXPERIENCE -->
+
+                <div class="dialogueContent mb-col-12 hvr-underline-from-center">
+                    <p class="ps2 dk-col-12 tb-col-12 mb-col-12 " id="repeatBtn">
+                        REPEAT THE INSTRUCTIONS
+                    </p>
+                </div>
+
+                <!-- JOIN THE EXPERIENCE -->
+
+                <div class="dialogueContent mb-col-12 hvr-underline-from-center">
+                    <p class="ps2 dk-col-12 tb-col-12 mb-col-12" id="beginBtn">
+                        LET'S DO THIS
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTOS LOGIN SECTION -->
+
+        <section class="sectionOne dk-col-12 tb-col-12 mb-col-12">
+            <div class="ctosInputContainer dk-col-12 tb-col-12 mb-col-12">
+
+                <!-- LOGO CTOS -->
+
+                <div class="sectionOneContent dk-col-12 tb-col-12 mb-col-12" data-tilt>
+                    <img class="ctosLogo" src="imgs/ctosLogo.png" alt="ctos Logo">
+                </div>
+
+                <!-- CTOS INPUT CONTAINER -->
+
+                <div class="sectionOneContent dk-col-12 tb-col-12 mb-col-12">
+                    <div class="myInputContainer dk-col-12 tb-col-12 mb-col-12">
+                        <form class="myForm dk-col-12 tb-col-12 mb-col-12">
+                            <input class="myInput" id="user" type="text" autocomplete="off" placeholder="Enter Password" />
+                            <button type="submit" id=submitPw> <i class="fa fa-arrow-right fa-2x iconBlack" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- DISPLAY OUTCOME OF INPUT -->
+
+                <div class="sectionOneContent dk-col-12 tb-col-12 mb-col-12">
+                    <p class="paraWhite dk-col-12 tb-col-12 mb-col-12" id="displayOutcome"> </p>
+                </div>
+
+                <!-- PW SUGGESTION ICONS -->
+
+                <div class="sectionOneContent dk-col-12 tb-col-12 mb-col-12">
+                    <span class="marginAuto">
+                    <i class="fa fa-question-circle fa-2x iconWhite" aria-hidden="true" id="iconHelpOpen"> </i>
+                    <i class="fa fa-times fa-2x iconWhite" id="iconHelpClose" aria-hidden="true"></i>
+                </span>
+                </div>
+
+                <!-- PW SUGGESTIONS -->
+
+                <div class="sectionOneContent dk-col-12 tb-col-12 mb-col-12" id="hackerConsoleId">
+                    <div class="hackConsole dk-col-10 tb-col-10 mb-col-10">
+                        <div class="hackContent dk-col-10 tb-col-10 mb-col-10">
+                            <p class="ps6">
+                                PASSWORD POSSIBILITIES
+                            </p>
+
+                            <br>
+
+                            <!-- DISPLAY PW SUGGESTIONS USING JS -->
+
+                            <div class="sectionOneContent dk-col-12 tb-col-12 mb-col-12">
+                                <p class="pwOptions dk-col-12 tb-col-12 mb-col-12" id="displayPwOptions"> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2 CTOS LOGIN AREA -->
+
+        <section class="sectionTwo dk-col-12 tb-col-12 mb-col-12">
+
+            <!-- CTOS HEADER -->
+
+            <header class="ctosHeaderContainer dk-col-12 tb-col-12 mb-col-12">
+
+                <!-- SMALL CTOS LOGO CONTAINER -->
+
+                <div class="ctosLogoContainerRt dk-col-3 tb-col-3 mb-col-12">
+                    <img class="ctosLogoImgRt" src="imgs/ctosLogo.png" alt="Ctos Logo">
+                </div>
+
+                <!-- BLUME HEADING  -->
+
+                <div class="headerIntroContainer dk-col-9 tb-col-9 mb-col-12 displayNone">
+                    <div class="headerIntroContent dk-col-12 tb-col-12 mb-col-12 displayNone">
+                        <p class="hs2"> //BLUME CTOS INFORMATION SYSTEMS </p>
+                    </div>
+                </div>
+
+                <!-- WELCOME BACK CTOS EMPLOYEE -->
+
+                <div class="headerIntroContainer dk-col-9 tb-col-9 mb-col-12 displayNone">
+                    <div class="headerIntroContent dk-col-12 tb-col-12 mb-col-12 displayNone">
+                        <p class="hs2"> Welcome back Sam Peters... </p>
+                    </div> <br> 
+                </div>
+                <hr class="style1"> 
+            </header>
+            
+       
+
+            <!-- CTOS BODY CONTAINER -->
+
+            <section class="ctosBodyContainer dk-col-12 tb-col-12 mb-col-12" id="ctosContentHide">
+
+
+                <div class="ctosContentContainer dk-col-4 tb-col-5 mb-col-6">
+
+                    <!-- OVERVIEW SECTION -->
+
+                    <div class="iconContainer dk-col-3 tb-col-3 mb-col-3">
+                        <div class="hvr-radial-out myIcon" id="myIcon1"> </div>
+                    </div>
+
+                    <!-- OVERVIEW TEXT RELVEALED -->
+
+                    <div class="iconContentContainer dk-col-9 tb-col-9 mb-col-9">
+                        <div class="paraContainerLeft" id="myIconInfo1">
+                            <p class="ps4"> WD2 OVERVIEW </p>
+                            <i class="fa fa-arrow-right iconWhite" aria-hidden="true" id="next1"> </i>
+                        </div>
+                    </div>
+
+                    <!-- PLOT SECTION -->
+
+                    <div class="iconContentContainer dk-col-9 tb-col-9 mb-col-9">
+                        <div class="paraContainerRight" id="myIconInfo2">
+                            <p class="ps4 alignright"> PLOT </p>
+                            <i class="fa fa-arrow-right iconWhite" aria-hidden="true" id="next2"> </i>
+                        </div>
+                    </div>
+
+                    <div class="iconContainer dk-col-3 tb-col-3 mb-col-3">
+                        <div class="hvr-radial-out myIcon" id="myIcon2"> </div>
+                    </div>
+
+                    <!-- GAMEPLAY SECTION -->
+
+                    <div class="iconContainer dk-col-3 tb-col-3 mb-col-3">
+                        <div class="hvr-radial-out myIcon" id="myIcon3"> </div>
+                    </div>
+
+                    <div class="iconContentContainer dk-col-9 tb-col-9 mb-col-9">
+                        <div class="paraContainerLeft" id="myIconInfo3">
+                            <p class="ps4"> GAMEPLAY </p>
+                            <i class="fa fa-arrow-right iconWhite" aria-hidden="true" id="next3"> </i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTOS CIRCLE  -->
+
+                <div class="ctosCircleWrapper dk-col-4 tb-col-2 mb-col-12 hiddenMb">
+                    <img class="ctosCircleImg" src="imgs/ctosCircle.png" alt="White Ctos Logo" data-tilt>
+                </div>
+
+                <!-- RIGHT CONTENT AREA -->
+
+                <div class="ctosContentContainer dk-col-4 tb-col-5 mb-col-6">
+
+                    <!-- official trailer link -->
+                    <div class="iconContainer dk-col-3 tb-col-3 mb-col-3">
+                        <div class="hvr-radial-out myIcon" id="myIcon4"> </div>
+                    </div>
+
+                    <div class="iconContentContainer dk-col-9 tb-col-9 mb-col-9">
+                        <div class="paraContainerLeft" id="myIconInfo4">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=y_IIVmc_Qi4">
+                            <p class="ps4"> OFFICIAL TRAILER </p>
+                        </a> 
+                        </div>
+                    </div>
+
+                    <!-- gameplay trailer link -->
+                    <div class="iconContentContainer dk-col-9 tb-col-9 mb-col-9">
+                        <div class="paraContainerRight" id="myIconInfo5">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=psxMbTTBJ6w">
+                            <p class="ps4">GAMEPLAY TRAILER</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="iconContainer dk-col-3 tb-col-3 mb-col-3">
+                        <div class="hvr-radial-out myIcon" id="myIcon5"> </div>
+                    </div>
+
+                    <!-- other links -->
+                    <div class="iconContainer dk-col-3 tb-col-3 mb-col-3">
+                        <div class="hvr-radial-out myIcon" id="myIcon6"> </div>
+                    </div>
+
+                    <div class="iconContentContainer dk-col-9 tb-col-9 mb-col-9">
+                        <div class="paraContainerLeft" id="myIconInfo6">
+                            <a target="_blank" href="https://watchdogs.ubisoft.com/watchdogs/en-us/home/">
+                            <p class="ps4">OFFICIAL WEBSITE</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ctosBodyContainer dk-col-12 tb-col-12 mb-col-12" id="overviewContainer">
+                <div class="ctosInfoImg dk-col-6 tb-col-6 mb-col-12 displayNone"> </div> <br>
+                <div class="ctosInfoImgText dk-col-6 tb-col-6 mb-col-12">
+                    <p class="titleFont"> OVERVIEW </p> <br> <br>
+                    <p class="paraWhite dk-col-11 tb-col-11 mb-col-11">
+                        Watch Dogs 2 is an action-adventure video game developed by Ubisoft Montreal and published by Ubisoft. To be released worldwide for PlayStation 4, Xbox One and Microsoft Windows in December 2017. Set within a fictionalized version of the San Francisco Bay Area...an area more than twice as large as the Chicago setting from Watch Dogs. <br> <br> The Bay Area consists of four different areas: San Francisco, Oakland, Marin, and Silicon Valley, all of which have different characteristics and aesthetics. Players can navigate the game's world on-foot or by the various vehicles featured in the game, such as cars, trucks, buses, cable cars, motorcycles, quad bikes and boats.
+                    </p> <br> <i class="fa fa-long-arrow-left iconWhiteBordered" aria-hidden="true" id="exitOverview"> </i>
+                </div>
+            </section>
+
+            <section class="ctosBodyContainer dk-col-12 tb-col-12 mb-col-12" id="plotContainer">
+                <div class="ctosInfoImg2 dk-col-6 tb-col-6 mb-col-12 displayNone"> </div>
+                <div class="ctosInfoImgText dk-col-6 tb-col-6 mb-col-12">
+                    <p class="titleFont"> PLOT </p> <br> <br>
+                    <p class="paraWhite dk-col-11 tb-col-11 mb-col-11">
+                        Hacker Marcus Holloway is punished for a crime he did not commit by the upgraded ctOS – ctOS 2.0 – which categorizes him as the suspect. Realizing the system covertly brings harm to the innocent citizens of San Francisco, he decides to work with the hacking group DedSec to take down the ctOS 2.0, and Blume, the company behind it. <br> <br> Marcus joins DedSec and works with fellow hackers Sitara , Wrench (Shawn Baichoo), Horatio and Josh, and they begin using their skills to expose corrupt organizations and corporations that are secretly using stolen personal ctOS data for their own ends.
+                    </p> <br> <i class="fa fa-long-arrow-left iconWhiteBordered" aria-hidden="true" id="exitPlot"> </i>
+                </div>
+            </section>
+
+            <section class="ctosBodyContainer dk-col-12 tb-col-12 mb-col-12" id="gameplayContainer">
+                <div class="ctosInfoImg dk-col-6 tb-col-6 mb-col-12 displayNone"> </div>
+                <div class="ctosInfoImgText dk-col-6 tb-col-6 mb-col-12 ">
+                    <p class="titleFont"> GAMEPLAY </p> <br> <br>
+                    <p class="paraWhite dk-col-11 tb-col-11 mb-col-11">
+                         In the main game, players take control of Aiden Pearce, a vigilante who can hack into various electronic devices tied to the city's central operating system (ctOS), allowing various methods for the player to solve numerous objectives. <br> <br>  The hacking mechanic in the game is performed directly from Aiden's in-game smartphone. The phone is also equipped with applications that interact directly with the environment around the player. <br> <br> For example, players can hack into NPC's phones to retrieve bank data and steal funds as well as unlock new cars, weapons, and in-game music, or they can hack into traffic lights to cause collisions.
+                    </p> <br> <i class="fa fa-long-arrow-left iconWhiteBordered" aria-hidden="true" id="exitGameplay"> </i>
+                </div>
+            </section>
+        </section>
+
+
+    </main>
+
+    <script src="js/vendors/jquery.js"></script>
+    <script src="js/vendors/tilt.jquery.js"></script>
+    <script src="js/vendors/mgGlitch.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
